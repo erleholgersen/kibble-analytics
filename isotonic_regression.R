@@ -73,12 +73,12 @@ png(
     height = 5,
     units = 'in',
     res = 500
-);
+    );
 
 par(
     mar = c(4.5, 4, 1, 7.5),
     xpd = TRUE
-);
+    );
 
 purr <- multicat(
     wet.food$time_elapsed, 
@@ -98,8 +98,7 @@ purr <- multicat(
     yat = seq(0, 150, length.out = 4),
     xlab = 'Hours since wet food distributed',
     ylab = 'Food consumed (g)'
-    # yaxtlab = seq(0, 150, length.out = 4)
-);
+    );
 
 
 lines(
@@ -107,7 +106,7 @@ lines(
     scaled.wet.food.regression$yscale,
     lwd = 3,
     col = wet.food.colour
-);
+    );
 
 morecats(
     purr,
@@ -120,14 +119,14 @@ morecats(
         replace = TRUE
     ),
     size = cat.size,
-);
+    );
 
 lines(
     scaled.kibble.regression$xscale,
     scaled.kibble.regression$yscale,
     lwd = 3,
     col = kibble.colour
-);
+    );
 
 # add legend
 legend(
@@ -136,7 +135,7 @@ legend(
     legend = c('Wet food', 'Kibble'),
     fill = c(wet.food.colour, kibble.colour),
     bty = 'n'
-);
+    );
 
 dev.off();
 
