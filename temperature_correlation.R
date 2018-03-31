@@ -124,3 +124,11 @@ text(
 	);
 
 dev.off();
+
+lm.model <- lm(
+	consumption ~ mean_temp,
+	temperatures
+	);
+
+print( summary(lm.model) );
+
