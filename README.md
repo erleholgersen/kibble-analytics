@@ -1,6 +1,6 @@
 # Kibble Analytics
 
-Code for my kibble analytics study. For more details on what led to this insanity, read [my blog post](https://erle.io/blog/2018-03-30-kibble-analytics/). 
+Code for my kibble analytics study. For more details on what led to this insanity, read [my blog post](https://erle.bio/blog/2018-03-30-kibble-analytics/). 
 
 ![Kibble Dashboard](plots/bowl_bias_multicoloured.png)
 
